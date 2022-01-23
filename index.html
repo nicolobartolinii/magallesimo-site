@@ -1,97 +1,125 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MAGALLESIMO</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/988406799c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="header-box">
-    <div class="header">
-        <div class="logo-links">
-            <div class="logo">
-                Header Logo
-            </div>
-
-            <ul class="links">
-                <li><a>Header link one</a></li>
-                <li><a>Header link two</a></li>
-                <li><a>Header link three</a></li>
-            </ul>
+    <div class="logo-links">
+        <div class="logo">
+            MAGALLESIMO
         </div>
 
-        <div class="hero">
-            <div class="sinistra">
-                <div class="hero-text">
-                    This website is awesome
-                </div>
-
-                <div class="sotto-hero-text">
-                    This website has some subtext that goes here under the main title. It's a smaller font and color is lower contrast.
-                </div>
-
-                <button class="bottone">
-                    Sign up
-                </button>
-            </div>
-
-            <div class="destra">
-                this is a placeholder for an image
-            </div>
-        </div></div>
+        <ul class="links">
+            <li><a href="https://discord.gg/cxN8w7cbkP"><i class="fab fa-discord"></i> Entra nel server</a></li>
+            <li>
+                <div class="vl"></div>
+            </li>
+            <li><a href="https://github.com/nicolobartolinii/magallesimo-site"><i class="fab fa-github"></i> Pagina
+                    GitHub del sito</a></li>
+        </ul>
     </div>
-<h2 class="random-info">Some random information</h2>
+    <div class="header-box">
+        <div class="header">
+
+
+            <div class="hero">
+                <div class="sinistra">
+                    <div class="hero-text">
+                        Sito del server MAGALLESIMO
+                    </div>
+
+                    <div class="sotto-hero-text">
+                        Questo sito ha come unico scopo farmi esercitare con HTML e CSS, però, volendo, può essere utile
+                        anche per entrare nel server Discord del MAGALLESIMO con il pulsante qui sotto.
+                    </div>
+
+                    <button id="bottoneEntra" class="bottone">
+                        <i class="fab fa-discord"></i> Entra
+                    </button>
+                    <script type="text/javascript">
+                        document.getElementById("bottoneEntra").onclick = function () {
+                            location.href = "https://discord.gg/cxN8w7cbkP";
+                        };
+                    </script>
+                </div>
+
+                <img class="destra">
+            </div>
+        </div>
+    </div>
+    </div>
+    <h2 class="random-info">Personaggi particolari che spuntano nel server</h2>
     <div class="carte">
-        
+
         <div class="carta">
-            <div class="box"></div>
-            <div>this is some subtext under an illustration or image</div>
+            <div id="box1"></div>
+            <div>L'uomo a forma di sfera. <span class="desc-personaggi">Spheren</span>.</div>
         </div>
 
         <div class="carta">
-            <div class="box"></div>
-            <div>this is some subtext under an illustration or image</div>
+            <div id="box2"></div>
+            <div>Stakataka, <span class="desc-personaggi">Stakataka</span>.</div>
         </div>
-        
+
         <div class="carta">
-            <div class="box"></div>
-            <div>this is some subtext under an illustration or image</div>
+            <div id="box3"></div>
+            <div>Il più potente, il migliore, il Creatore. <span class="desc-nome-magalli">Giancarlo</span> <span
+                    class="desc-personaggi">Magalli</span>.</div>
         </div>
-        
+
         <div class="carta">
-            <div class="box"></div>
-            <div>this is some subtext under an illustration or image</div>
+            <div id="box4"></div>
+            <div>Colui che scrive. Il <span class="desc-personaggi">mongoloide</span>.</div>
         </div>
-        
+
     </div>
 
     <div class="quote">
         <div class="quote-box">
-        <div class="citazione">
-            <i>This is an ispiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</i>
-        </div>
+            <div class="citazione">
+                <div>
+                    - Fede, Fede, perché c'è l'uccello top?
+                </div>
+                <div>- Perché non ho la torre.</div>
+            </div>
 
-        <div class="autore">
-            <b>- Thor, God of Thunder</b>
-        </div></div>
+            <div class="autore">
+                <b>Da una lacrima strappastorie</b>
+            </div>
+        </div>
     </div>
 
     <div class="signup-box">
-    <div class="signup">
-            <div class="signup-destra">
-                <div class="titolo-signup">Call to action! It's time!</div>
-                <div class="desc-signup">Sign up for our product by clicking that button over there!</div>
-            </div>
+        <div class="signup-container">
+            <div class="signup-img"></div>
+            <div class="signup">
+                <div class="signup-destra">
+                    <div class="titolo-signup">Magalli ti punta il ferro, che fai? Entri?</div>
+                    <div class="desc-signup">Non entrando ti assumi la responsabilità delle azioni di Magalli.</div>
+                </div>
 
-            <button class="signup-sinistra">
-                Sign up
-            </button>
-    </div></div>
+                <button id="bottoneEntra2" class="signup-sinistra">
+                    <i class="fab fa-discord"></i> Entra
+                </button>
+                <script type="text/javascript">
+                    document.getElementById("bottoneEntra2").onclick = function () {
+                        location.href = "https://discord.gg/cxN8w7cbkP";
+                    };
+                </script>
+            </div>
+        </div>
+    </div>
 
     <div class="footer">
-        Copyright The Odin Project 2022
+        Created by: <a href="https://github.com/nicolobartolinii"> <i class="fab fa-github"></i> nicolobartolinii</a>
     </div>
 </body>
+
 </html>

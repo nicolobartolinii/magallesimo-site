@@ -1,88 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: Poppins, Roboto, sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
+@media only screen and (max-device-width: 1366px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
 .header-box {
     display: flex;
-    background-color: #1F2937;
     justify-content: center;
+    background-image: url("./resources/magalli-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    gap:32px;
+    gap: 32px;
     align-self: center;
+
 }
 
-    .logo-links {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-    
-    }
+.logo-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1F2937;
 
-        .sotto-hero-text, .links {
-            color: #E5E7EB;
-            font-size: 18px;
-        }
+}
 
-        .links {
-            list-style-type: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-            gap: 16px;
-        }
+.sotto-hero-text,
+.links {
+    color: #E5E7EB;
+    font-size: 18px;
+}
 
-        .logo {
-            color: #F9FAF8;
-            font-size: 24px;
-            font-weight: bold;
-        }
+a {
+    color: #E5E7EB;
+    text-decoration: none;
+}
 
-    .hero {
-        display: flex;
-        justify-content: center;
-        padding: 64px;
-        gap: 32px;
-    }
+.vl {
+    border-left: 2px solid #e5e7eb69;
+    height: 30px;
+}
 
-        .sinistra {
-            display: flex;
-            flex-direction: column;
-            max-width: 450px;
-            gap: 8px;
-        }
+.links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+}
 
-            .hero-text {
-                color: #F9FAF8;
-                font-size: 48px;
-                font-weight: 900;
-            }
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: bold;
+}
 
-            .bottone {
-                background-color: #3882F6;
-                padding: 8px 24px;
-                color: #F9FAF8;
-                font-weight: bold;
-                align-self: flex-start;
-                border-radius: 10px;
-                border: none;
-            }  
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 25px;
+    gap: 32px;
+    background-color: #1f29373f;
+}
 
-        .destra {
-            background-color: gray;
-            width: 450px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.sinistra {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    gap: 8px;
+}
+
+.hero-text {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.bottone {
+    background-color: #3882F6;
+    padding: 8px 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+    align-self: flex-start;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.destra {
+    background-image: url("./resources/maga.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+}
 
 .random-info {
     color: #1F2937;
@@ -91,32 +120,81 @@ body {
     text-align: center;
 }
 
-    .carte {
-        display: flex;
-        justify-content: center;
-        gap: 24px;
-        padding-bottom: 64px;
-    }
+.carte {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 64px;
+    flex-wrap: wrap;
+}
 
-        .carta {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 150px;
-            gap: 8px;
-        }
+.carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    gap: 8px;
+}
 
-            .box {
-                width: 150px;
-                height: 150px;
-                border: 3px solid #3882F6;
-                border-radius: 10px;
-            }
+#box1 {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    background-image: url("./resources/spheren.jpg");
+    background-position: center;
+    background-size: cover;
+    background-position-x: 4px;
+    background-repeat: no-repeat;
+}
 
-            .carta div {
-                color: #1F2937;
-                text-align: center;
-            }
+#box2 {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    background-image: url("./resources/stakataka-icon.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#box3 {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    background-image: url("./resources/magalli-icon.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#box4 {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    background-image: url("./resources/mongoloide.jpg");
+    background-position: center;
+    background-position-y: -10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.desc-personaggi {
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.desc-nome-magalli {
+    font-weight: 500;
+}
+
+.carta div {
+    color: #1F2937;
+    text-align: center;
+}
 
 .quote {
     background-color: #E5E7EB;
@@ -125,63 +203,88 @@ body {
     justify-content: center;
     align-items: center;
 }
-    .quote-box {
-        display: flex;
-        flex-direction: column;
-        margin-left: 25%;
-        margin-right: 25%;
-        gap: 16px;
-    }
 
-        .citazione {
-            font-size: 36px;
-            color: #1F2937;
-            font-style: italic;
-            font-weight: lighter;
-        }
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+    gap: 16px;
+}
 
-        .autore {
-            text-align: right;
-        }
+.citazione {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.autore {
+    text-align: right;
+}
 
 .signup-box {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 64px;
+    background-image: url("./resources/stakataka.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-    .signup {
-        display: flex;
-        padding: 32px 100px;
-        background-color: #3882F6;
-        border-radius: 10px;
-        justify-content: space-between;
-        gap: 100px;
-    }
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
 
-        .signup-destra {
-            color:#F9FAF8;
+.signup-img {
+    background-image: url("./resources/magalli-ferro.jpg");
+    width: 400px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+}
 
-        }
+.signup {
+    display: flex;
+    padding: 32px 100px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    justify-content: space-between;
+    gap: 100px;
+}
 
-            .titolo-signup {
-                font-size: 18px;
-                font-weight: bold;
-            }
+.signup-destra {
+    color: #F9FAF8;
 
-            .desc-signup {
-                font-size: 14px;
-            }
-        
-        .signup-sinistra {
-            background-color: rgba(0, 0, 0, 0);
-            border: 2px solid #F9FAF8;
-            border-radius: 5px;
-            padding: 4px 24px;
-            color:#F9FAF8;
-            align-self: center;
-        }
+}
+
+.titolo-signup {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.desc-signup {
+    font-size: 14px;
+}
+
+.signup-sinistra {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #F9FAF8;
+    border-radius: 5px;
+    padding: 4px 24px;
+    color: #F9FAF8;
+    align-self: center;
+    cursor: pointer;
+}
 
 .footer {
     display: flex;
@@ -190,4 +293,6 @@ body {
     align-items: center;
     padding: 24px;
     color: #F9FAF8;
+    gap: 4px;
+
 }
