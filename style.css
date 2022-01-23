@@ -94,6 +94,7 @@ body {
         display: flex;
         justify-content: center;
         gap: 24px;
+        padding-bottom: 64px;
     }
 
         .carta {
@@ -119,12 +120,26 @@ body {
 .quote {
     background-color: #E5E7EB;
     display: flex;
-    flex-direction: column;
+    padding: 64px;
+    justify-content: center;
+    align-items: center;
 }
-
-    .citazione {
-        font-size: 36px;
-        color: #1F2937;
-        font-style: italic;
-        font-weight: lighter;
+    .quote-box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+        margin-right: 25%;
+        gap: 16px;
     }
+
+        .citazione {
+            font-size: 36px;
+            color: #1F2937;
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+        .autore {
+            text-align: right;
+        }
+
